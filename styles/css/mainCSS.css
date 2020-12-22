@@ -1,0 +1,42 @@
+
+.mainDiv{
+    margin: 10px 0;
+}
+
+.parentCenterDiv{
+    align-items: center;
+    align-content: center;
+}
+.centerDiv{
+    margin: 0 auto;
+    /* padding: 50px 0; */
+}
+
+.centerElement{
+    text-align: center;
+}
+
+.tableOuter{
+    margin-top: 50px;
+}
+
+.tableGen{
+    margin: 0 auto;
+    border-collapse: collapse;
+    width: 80%;
+    padding: 8px;
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+
+.tableGen th, .tableGen td{
+    border: 1px solid rgb(39, 38, 38);
+    padding: 10px 10px;
+}
+
+.tableGen tr:nth-child(even){
+    background: #F1F1F1;
+}
+
+.tableGen th{
+    background: #D4EDDA;
+}

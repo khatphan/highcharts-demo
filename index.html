@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Hello world HIGHCHARTS</title>
+    <!-- main CSS -->
+    <link rel="stylesheet" href="styles/css/mainCSS.css">
+
+    <link rel="shortcut icon" href="images/favicon.ico" />
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+
+    <!-- AngularJS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.0/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.0/angular-route.min.js"></script>
+
+    <!-- underscore-->
+    <script src="https://cdn.jsdelivr.net/npm/underscore@1.12.0/underscore-min.js"></script>
+    <style>
+        @media screen {}
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col col-md-10 col-md-offset-1">
+                <div class="p-3 mb-2 bg-secondary mainDiv">
+                    <div class="border border-dark centerDiv">
+
+                        <div class="panel panel-group">
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h2 class="centerElement">ANGULARJS KHAT-PK</h2><br />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-group">
+                            <div class="panel panel-default">
+                                <div ng-app="mainHighChartApp" ng-controller="mainUser_controller" class="panel-body">
+                                    <div class="centerDiv">
+                                        <div class="row">
+                                            <div class="col-md-4 col-md-offset-8">
+                                                <button class="btn btn-default" type="submit" ng-click="getPropertiesUser()">Get properties</button>
+                                            </div>
+                                        </div><br>
+
+                                        <form class="form-horizontal">
+                                            <div class="form-group">
+                                                <div class="row">
+                                                    <div class="col-md-2">
+                                                        <span>X properties:</span>
+                                                    </div>
+                                                    <div class="col-md-2">
+                                                        <select class="form-control" ng-model="selectedPropertyUserX">
+                                                            <option value="">Select</option>
+                                                            <option ng-repeat="pro in propertiesUser" value="{{pro}}">{{pro}}</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <input type="text" class="form-control" ng-model="modelTitleX">
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <div class="row">
+                                                    <div class="col-md-2">
+                                                        <span>Y properties:</span>
+                                                    </div>
+                                                    <div class="col-md-2">
+                                                        <select class="form-control" ng-model="selectedPropertyUserY">
+                                                            <option value="">Select</option>
+                                                            <option ng-repeat="pro in propertiesUser" value="{{pro}}">{{pro}}</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <input type="text" class="form-control" ng-model="modelTitleY">
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <div class="row">
+                                                    <div class="col-md-3 col-md-offset-3">
+                                                        <button class="btn btn-default" type="submit" ng-click="previewCharts()">View Highcharts</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="panel panel-group">
+                            <div class="panel-footer">
+                                <h3>Panel Footer</h3>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- main JS -->
+    <script src="styles/js/mainJS.js"></script>
+
+</body>
+
+</html>
